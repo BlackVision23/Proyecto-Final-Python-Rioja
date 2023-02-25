@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Eliminar publicación</h1>
+  <p>¿Estás seguro que deseas eliminar esta publicación?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Eliminar</button>
+  </form>
+{% endblock %}
